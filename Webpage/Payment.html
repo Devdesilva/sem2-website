@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stocked | Order</title>
+  <link rel="stylesheet" href="CSS/Webstyle.css">
+  <link rel="stylesheet" href="CSS/Universal.css">
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <img src="Images/Footer logo.png" class="logo">
+      <a href="Cart.html" ><img src="Images\Cart.png"  class="Cart"></a>
+      
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="About Us.html">About Us</a></li>
+      <li><a href="Dairy.html">Dairy</a></li>
+      <li><a href="Vegetable.html">Vegetables</a></li>
+      <li><a href="Cosmetics and Skin.html">Cosmetics and Skin</a></li>
+      <li><a href="Fruits.html">Fruits</a></li>
+      <li><a href="Meat.html">Meat & Seafood</a></li>
+      <li><a href="Baking.html">Baking & Cooking</a></li>
+      <li><a href="Payment.html">Payment</a></li>
+      <li><a href="Register.html">Register</a></li>
+    </ul>
+    <center>
+      <div class="bg">
+        <form action="/search" method="get" class="searchform">
+          <input type="text" id="search-input" name="q" placeholder="Search">
+          <button type="submit" class="searchbutton">Search</button>
+        </form>
+      </div>
+    </center>
+  </nav>
+  <br>
+  <center><h1>Order Summary</h1></center>
+  <br><br>
+  <table id="cart-table">
+    <thead>
+        <tr>
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Total Price</th>
+        </tr>
+    </thead>
+    <tbody id="cart-table-body">
+        <!-- table rows will be generated dynamically -->
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3">Total:</td>
+            <td id="total-price">Rs 0.00</td>
+        </tr>
+    </tfoot>
+  </table>
+  <form class="orderForm">
+    <h2>Payment Details</h2>  
+    <hr width="25%">
+    <form id="buy-now-form">
+      <!-- form fields for customer information -->
+      <form id="buy-now-form">
+        <!-- form fields for customer information -->
+        <label for="name">Name:</label>
+        <input required type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address"><br><br>
+        <label for="zip">Zip Code:</label>
+        <input type="text" id="zip" name="zip"><br><br>
+        <!-- form fields for credit card information -->
+        <label for="cc-number">Credit Card Number:</label>
+        <input type="text" id="cc-number" name="cc-number"><br><br>
+        <label for="ccv">CCV:</label>
+        <input type="text" id="ccv" name="ccv"><br><br>
+        <label for="expiry-date">Expiry Date (MM/YY):</label>
+        <input type="text" id="expiry-date" name="expiry-date"><br><br>
+        <button type="button" id="buy-now-button" onclick="placeOrder()">Buy Now</button>
+    </form>    
+    <!-- The popup div -->
+    <div class="popup" id="orderConfirmation">
+        <center>
+            <h2>Thank You For Your Purchase</h2>
+            <p>Your order has been placed. Expected delivery date: 3 Days</p>
+            <button onclick="closePopup()" class="placeorderbtn">Close</button>
+        </center>
+    </div>
+    </div>
+  </form>
+</form>
+<script src="JavaScript\Cart.js"></script>
+<script src="JavaScript\OrderSum.js"></script>
+</body>
+<br><br>
+<footer class="footer">
+  <div class="footer-links">
+    <a href="About.html">About us</a><br>
+    <a href="Order.html">Order</a><br>
+    <a href="Register.html">Register</a><br>
+  </div>
+  <img src="Images\Footer logo.png" class="background">
+  <div class="footer-social-media">
+    <p class="pbackground">Contact us: </p>
+    <a href="https://www.facebook.com/"><img src="Images\Facebook-icon.png" alt="Facebook"></a>
+    <a href="https://www.twitter.com/"><img src="Images\Twitter-icon.png" alt="Twitter"></a>
+    <a href="https://www.instagram.com/"><img src="Images\Instagram-icon.webp" alt="Instagram"></a>
+  </div>
+</footer>
+</html>

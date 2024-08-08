@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Page</title>
+  <link rel="stylesheet" href="CSS\Universal.css">
+  <link rel="stylesheet" href="CSS\Webstyle.css">
+</head>
+
+<body>
+  <nav>
+    <div class="container">
+      <img src="Images/Footer logo.png" class="logo">
+      <a href="Cart.html"><img src="Images\Cart.png" class="Cart"></a>
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="About Us.html">About Us</a></li>
+      <li><a href="Dairy.html">Dairy</a></li>
+      <li><a href="Vegetable.html">Vegetables</a></li>
+      <li><a href="Cosmetics and Skin.html">Cosmetics and Skin</a></li>
+      <li><a href="Fruits.html">Fruits</a></li>
+      <li><a href="Meat.html">Meat & Seafood</a></li>
+      <li><a href="Baking.html">Baking & Cooking</a></li>
+      <li><a href="Payment.html">Payment</a></li>
+      <li><a href="Register.html">Register</a></li>
+    </ul>
+    <center>
+      <div class="bg">
+        <form action="/search" method="get" class="searchform">
+          <input type="text" id="search-input" name="q" placeholder="Search">
+          <button type="submit" class="searchbutton">Search</button>
+        </form>
+      </div>
+    </center>
+  </nav>
+  <br>
+  <center><h1>Order/Cart Page</h1></center>
+  <form id="order-form">
+    <div class="cartgrid">    
+      <section id="fruits">
+          <div class="vegproduct">
+            <h2>Fruits</h2>
+            <label for="red-apple">Red Apple 1KG</label>
+            <input type="number" id="apple" name="red-apple" value="0">
+            <span id="red-apple-price">Rs 2,190.00</span>
+            <button class="add-to-cart" data-product="red-apple">Add to Cart</button>
+            <br><br>
+            <label for="avocado">Avocados 1KG</label>
+            <input type="number" id="avacado" name="avacado" value="0">
+            <span id="avacado-price">Rs 406.00</span>
+            <button class="add-to-cart" data-product="avacado">Add to Cart</button>
+            <br><br>
+            <label for="papaw">Papaw 1.20KG</label>
+            <input type="number" id="papaw" name="papaw" value="0">
+            <span id="papaw-price">Rs 315.00</span>
+            <button class="add-to-cart" data-product="papaw">Add to Cart</button>
+            <br><br>
+            <label for="banana">Cavendish Banana 1KG</label>
+            <input type="number" id="banana" name="banana" value="0">
+            <span id="banana-price">Rs 399.00</span>
+            <button class="add-to-cart" data-product="banana">Add to Cart</button>
+            <br><br>
+            <label for="pineapple">Pineapple 1.25KG</label>
+            <input type="number" id="pineapple" name="pineapple" value="0">
+            <span id="pineapple-price">Rs 813.00</span>
+            <button class="add-to-cart" data-product="pineapple">Add to Cart</button>
+            <br><br>
+            <label for="mango">Mango 1KG</label>
+            <input type="number" id="mango" name="mango" value="0">
+            <span id="mango-price">Rs 1200.00</span>
+            <button class="add-to-cart" data-product="mango">Add to Cart</button>
+          </div>
+      </section>  
+      <section id="dairy">
+        <div class="vegproduct">
+          <h2>Dairy</h2>
+          <label for="ben-jerry">Ben & Jerry's Cookie Dough</label>
+          <input type="number" id="ben-jerry" name="ben-jerry" value="0">
+          <span id="ben-jerry-price">Rs 5,990.00</span>
+          <button class="add-to-cart" data-product="ben-jerry">Add to Cart</button>
+          <br><br>
+          <label for="ambewela-milk">Ambewela Milk Choco 1000ml</label>
+          <input type="number" id="ambewela-milk" name="ambewela-milk" value="0">
+          <span id="ambewela-milk-price">Rs 600.00</span>
+          <button class="add-to-cart" data-product="ambewela-milk">Add to Cart</button>
+          <br><br>
+          <label for="kandos-sugar-free">Kandos Sugar Free 100g</label>
+          <input type="number" id="kandos-sugar-free" name="kandos-sugar-free" value="0">
+          <span id="kandos-sugar-free-price">Rs 800.00</span>
+          <button class="add-to-cart" data-product="kandos-sugar-free">Add to Cart</button>
+          <br><br>
+          <label for="lurpack-butter">Lurpack Butter Unsalted 200g</label>
+          <input type="number" id="lurpack-butter" name="lurpack-butter" value="0">
+          <span id="lurpack-butter-price">Rs 1,305.00</span>
+          <button class="add-to-cart" data-product="lurpack-butter">Add to Cart</button>
+          <br><br>
+          <label for="anchor-yoghurt">AnchorM/Berry Yoghurt 100g</label>
+          <input type="number" id="anchor-yoghurt" name="anchor-yoghurt" value="0">
+          <span id="anchor-yoghurt-price">Rs 180.00</span>
+          <button class="add-to-cart" data-product="anchor-yoghurt">Add to Cart</button>
+        </div>
+      </section>  
+      <section id="vegetables">
+        <div class="vegproduct">
+          <h2>Vegatables</h2>
+          <label for="potatoes">Packed Potatoes 1KG</label>
+            <input type="number" id="potatoes" name="potatoes" value="0">
+            <span id="potatoes-price">Rs 360.00</span>
+            <button class="add-to-cart" data-product="potatoes">Add to Cart</button>
+            <br><br>
+            <label for="tomatoes">Tomatoes 1KG</label>
+            <input type="number" id="tomatoes" name="tomatoes" value="0">
+            <span id="tomatoes-price">Rs 80.00</span>
+            <button class="add-to-cart" data-product="tomatoes">Add to Cart</button>
+            <br><br>
+            <label for="pumpkin">Pumpkin 1KG</label>
+            <input type="number" id="pumpkin" name="pumpkin" value="0">
+            <span id="pumpkin-price">Rs 60.00</span>
+            <button class="add-to-cart" data-product="pumpkin">Add to Cart</button>
+            <br><br>
+            <label for="green-bellpepper">Green bellpepper 1KG</label>
+            <input type="number" id="green-bellpepper" name="green-bellpepper" value="0">
+            <span id="green-bellpepper-price">Rs 830.00</span>
+            <button class="add-to-cart" data-product="green-bellpepper">Add to Cart</button>
+            <br><br>
+            <label for="big-onions">Big Onions 1KG</label>
+            <input type="number" id="big-onions" name="big-onions" value="0">
+            <span id="big-onions-price">Rs 420.00</span>
+            <button class="add-to-cart" data-product="big-onions">Add to Cart</button>
+            <br><br>
+            <label for="carrot">Carrot 1KG</label>
+            <input type="number" id="carrot" name="carrot" value="0">
+            <span id="carrot-price">Rs 216.00</span>
+            <button class="add-to-cart" data-product="carrot">Add to Cart</button>
+        </div>
+      </section>  
+      <section id="Meat&Seafood">
+        <div class="vegproduct">
+          <h2>Meat & Seafood</h2>
+          <label for="tuna-slices">Tuna Slices 0.50KG</label>
+            <input type="number" id="tuna-slices" name="tuna-slices" value="0">
+            <span id="tuna-slices-price">Rs 959.00</span>
+            <button class="add-to-cart" data-product="tuna-slices">Add to Cart</button>
+            <br><br>
+            <label for="peeled-prawns">Peeled Prawns 0.25KG</label>
+            <input type="number" id="peeled-prawns" name="peeled-prawns" value="0">
+            <span id="peeled-prawns-price">Rs 1009.00</span>
+            <button class="add-to-cart" data-product="peeled-prawns">Add to Cart</button>
+            <br><br>
+            <label for="white-cuttlefish">White Cuttlefish 0.50KG</label>
+            <input type="number" id="white-cuttlefish" name="white-cuttlefish" value="0">
+            <span id="white-cuttlefish-price">Rs 1574.00</span>
+            <button class="add-to-cart" data-product="white-cuttlefish  ">Add to Cart</button>
+            <br><br>
+            <label for="crysbro-chicken">Crysbro Whole Chicken 1KG</label>
+            <input type="number" id="crysbro-chicken" name="crysbro-chicken" value="0">
+            <span id="crysbro-chicken-price">Rs 1257.00</span>
+            <button class="add-to-cart" data-product="crysbro-chicken">Add to Cart</button>
+            <br><br>
+            <label for="bairaha-sausages">Bairaha Chicken Sausages 0.50KG</label>
+            <input type="number" id="bairaha-sausages" name="bairaha-sausages" value="0">
+            <span id="bairaha-sausages-price">Rs 617.00</span>
+            <button class="add-to-cart" data-product="bairaha-sausages">Add to Cart</button>
+            <br><br>
+            <label for="prima-meatballs">Prima Chicken Meatballs 0.50KG</label>
+            <input type="number" id="prima-meatballs" name="prima-meatballs" value="0">
+            <span id="prima-meatballs-price">Rs 216.00</span>
+            <button class="add-to-cart" data-product="prima-meatballs">Add to Cart</button>
+        </div>
+      </section>  
+      <section id="Baking$Cooking">
+        <div class="vegproduct">
+          <h2>Baking & Cooking Ingredients</h2>
+          <label for="mauripan-dry-yeast">Mauripan Dry Yeast 60g</label>
+            <input type="number" id="mauripan-dry-yeas" name="mauripan-dry-yeas" value="0">
+            <span id="mauripan-dry-yeas-price">Rs 412.00</span>
+            <button class="add-to-cart" data-product="mauripan-dry-yeas">Add to Cart</button>
+            <br><br>
+            <label for="kist-treacle">Kist Treacle 340ml</label>
+            <input type="number" id="kist-treacle" name="kist-treacle" value="0">
+            <span id="kist-treacle-price">Rs 495.00</span>
+            <button class="add-to-cart" data-product="kist-treacle">Add to Cart</button>
+            <br><br>
+            <label for="mauri-baking-powder">Mauri Baking Powder 50g</label>
+            <input type="number" id="mauri-baking-powder" name="mauri-baking-powder" value="0">
+            <span id="mauri-baking-powder-price">Rs 172.00</span>
+            <button class="add-to-cart" data-product="mauri-baking-powder">Add to Cart</button>
+            <br><br>
+            <label for="star-vanilla-essence">Star Brand Vanilla Essence 28m</label>
+            <input type="number" id="star-vanilla-essence" name="star-vanilla-essence" value="0">
+            <span id="star-vanilla-essence-price">Rs 215.00</span>
+            <button class="add-to-cart" data-product="star-vanilla-essence">Add to Cart</button>
+            <br><br>
+            <label for="motha-corn-flour">Motha Corn flour 100g</label>
+            <input type="number" id="motha-corn-flour" name="motha-corn-flour" value="0">
+            <span id="motha-corn-flour-price">Rs 150.00</span>
+            <button class="add-to-cart" data-product="motha-corn-flour">Add to Cart</button>
+            <br><br>
+            <label for="motha-cocoa-powder">Motha Cocoa Powder 100g</label>
+            <input type="number" id="motha-cocoa-powder" name="motha-cocoa-powder" value="0">
+            <span id="motha-cocoa-powder-price">Rs 750.00</span>
+            <button class="add-to-cart" data-product="motha-cocoa-powder">Add to Cart</button>
+        </div>
+      </section> 
+    </div>
+  </form>
+  <br><br>
+  <table id="cart-table">
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Total Price</th>
+      </tr>
+    </thead>
+    <tbody id="cart-table-body">
+      <!-- table rows will be generated dynamically -->
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3">Total:</td>
+        <td id="total-price">Rs 0.00</td>
+      </tr>
+    </tfoot>
+  </table>
+  <br>  
+  <center>
+    <input type="hidden" name="cart-data" id="cart-data" value="">
+    <button type="button" id="pay-button" onclick="redirectToOrderPage()">Pay</button>
+    <button type="button" id="add-to-favorites-button">Add to Favorites</button>
+    <button type="button" id="apply-favorites-button">Apply Favorites</button>
+  </center>
+  <br>
+  <br>
+  <script src="JavaScript\Cart.js"></script>
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="About.html">About us</a><br>
+      <a href="Order.html">Order</a><br>
+      <a href="Register.html">Register</a><br>
+    </div>
+    <img src="Images\Footer logo.png" class="background">
+    <div class="footer-social-media">
+      <p class="pbackground">Contact us: </p>
+      <a href="https://www.facebook.com/"><img src="Images\Facebook-icon.png" alt="Facebook"></a>
+      <a href="https://www.twitter.com/"><img src="Images\Twitter-icon.png" alt="Twitter"></a>
+      <a href="https://www.instagram.com/"><img src="Images\Instagram-icon.webp" alt="Instagram"></a>
+    </div>
+  </footer>
+
+</html>
+</body>
+
+</html>
